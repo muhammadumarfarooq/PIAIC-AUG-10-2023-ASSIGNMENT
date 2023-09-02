@@ -87,14 +87,29 @@ function printFactorial(integer: number) {
 // console.log(result);
 
 // Problem # 6 (Remove Negative numbers)
-const numArray = [1,2,3,-2,4,-4];
+// const numArray = [1,2,3,-2,4,-4];
+//
+// for(let i = 0; i < numArray.length; i++){
+//     if(numArray[i] < 0){
+//         numArray.splice(i, 1);
+//     }
+// }
+//
+// console.log(numArray);
 
-for(let i = 0; i < numArray.length; i++){
-    if(numArray[i] < 0){
-        numArray.splice(i, 1);
+// Problem # 7 (Sum of numbers)
+function sumOfNumbers (numArray: number[]) {
+    let i = 0;
+
+    let total = 0;
+
+    while (i < numArray.length) {
+        total = total + numArray[i];
+        i++;
     }
+
+    return total;
 }
 
-console.log(numArray);
-
-
+const result = sumOfNumbers([1,2,3]);
+console.log(result);
