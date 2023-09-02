@@ -31,8 +31,21 @@ function updateQty (itemIndex: number, newQty: number) {
 
 addItem({id: '1', name: 'Bag', price: 2, qty: 2});
 addItem({id: '2', name: 'Lotion', price: 5, qty: 1});
-console.log("Item added", cart);
-removeItem(0);
-console.log("Remove Item", cart);
-updateQty(0, 5);
-console.log("Update Item", cart);
+// console.log("Item added", cart);
+// removeItem(0);
+// console.log("Remove Item", cart);
+// updateQty(0, 5);
+// console.log("Update Item", cart);
+
+// Problem # 3 (Use While loop to print first 25 integers)
+
+function printIntegers() {
+    let n = 0;
+
+    while (n <= 25) {
+        console.log("Integer", n);
+        n++;
+    }
+}
+
+printIntegers();
