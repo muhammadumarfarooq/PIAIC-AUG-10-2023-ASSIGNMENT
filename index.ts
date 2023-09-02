@@ -83,5 +83,18 @@ function printFactorial(integer: number) {
     return factorial;
 }
 
-const result = printFactorial(5);
-console.log(result);
+// const result = printFactorial(5);
+// console.log(result);
+
+// Problem # 6 (Remove Negative numbers)
+const numArray = [1,2,3,-2,4,-4];
+
+for(let i = 0; i < numArray.length; i++){
+    if(numArray[i] < 0){
+        numArray.splice(i, 1);
+    }
+}
+
+console.log(numArray);
+
+
