@@ -63,4 +63,25 @@ function printFirst10Even() {
     }
 }
 
-printFirst10Even();
+// printFirst10Even();
+
+// Problem # 5 (Print print factorial)
+
+function printFactorial(integer: number) {
+    if(integer < 0) return;
+    if(integer === 0) return 1;
+
+    let factorial = 1;
+
+    let n = 1;
+
+    while (n <= integer) {
+        factorial = factorial * n;
+        n++;
+    }
+
+    return factorial;
+}
+
+const result = printFactorial(5);
+console.log(result);
