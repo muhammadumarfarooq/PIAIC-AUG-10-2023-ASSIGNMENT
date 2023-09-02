@@ -48,4 +48,19 @@ function printIntegers() {
     }
 }
 
-printIntegers();
+// printIntegers();
+
+// Problem # 4 (Print first 10 event numbers)
+
+function printFirst10Even() {
+    let n = 1;
+
+    while (n <= 20) {
+        if(n % 2 == 0){
+            console.log("Integer", n);
+        }
+        n++;
+    }
+}
+
+printFirst10Even();
