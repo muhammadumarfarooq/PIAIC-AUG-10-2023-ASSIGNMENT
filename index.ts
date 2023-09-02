@@ -111,5 +111,24 @@ function sumOfNumbers (numArray: number[]) {
     return total;
 }
 
-const result = sumOfNumbers([1,2,3]);
+// const result = sumOfNumbers([1,2,3]);
+// console.log(result);
+
+
+// Problem # 8
+function convertTemperatures (celsiusTemperature: number[]) {
+    let i = 0;
+
+    const fTemp = [];
+
+    while (i < celsiusTemperature.length) {
+        const result = (celsiusTemperature[i] * (9/5)) + 32;
+        fTemp.push(result);
+        i++;
+    }
+
+    return fTemp;
+}
+
+const result = convertTemperatures([1,2,3]);
 console.log(result);
